@@ -7,7 +7,13 @@ def main():
     print(f"Запуск приложения: {APP_NAME}")
     print(f"Версия: {VERSION}")
     print(f"Режим отладки: {DEBUG}")
+
     app.start()
+    app.stop()
+    app.start()
+
+    print(app.get_start_count())
+
 
 if __name__ == "__main__":
     main()
